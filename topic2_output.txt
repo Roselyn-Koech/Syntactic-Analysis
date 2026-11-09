@@ -1,0 +1,316 @@
+======================================================================
+PART 1: POS TAGGING
+======================================================================
+
+Post 1: The new phone camera is absolutely amazing!
+TOKEN         UPOS    PENN TAG  EXPLANATION
+The           DET     DT        determiner
+new           ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+phone         NOUN    NN        noun, singular or mass
+camera        NOUN    NN        noun, singular or mass
+is            AUX     VBZ       verb, 3rd person singular present
+absolutely    ADV     RB        adverb
+amazing       ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+!             PUNCT   .         punctuation mark, sentence closer
+
+Post 2: Just landed in Nairobi and the weather is lovely.
+TOKEN         UPOS    PENN TAG  EXPLANATION
+Just          ADV     RB        adverb
+landed        VERB    VBD       verb, past tense
+in            ADP     IN        conjunction, subordinating or preposition
+Nairobi       PROPN   NNP       noun, proper singular
+and           CCONJ   CC        conjunction, coordinating
+the           DET     DT        determiner
+weather       NOUN    NN        noun, singular or mass
+is            AUX     VBZ       verb, 3rd person singular present
+lovely        ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+.             PUNCT   .         punctuation mark, sentence closer
+
+Post 3: I can't believe the airline lost my luggage again.
+TOKEN         UPOS    PENN TAG  EXPLANATION
+I             PRON    PRP       pronoun, personal
+ca            AUX     MD        verb, modal auxiliary
+n't           PART    RB        adverb
+believe       VERB    VB        verb, base form
+the           DET     DT        determiner
+airline       NOUN    NN        noun, singular or mass
+lost          VERB    VBD       verb, past tense
+my            PRON    PRP$      pronoun, possessive
+luggage       NOUN    NN        noun, singular or mass
+again         ADV     RB        adverb
+.             PUNCT   .         punctuation mark, sentence closer
+
+Post 4: Customer service solved my problem quickly. Great job!
+TOKEN         UPOS    PENN TAG  EXPLANATION
+Customer      NOUN    NN        noun, singular or mass
+service       NOUN    NN        noun, singular or mass
+solved        VERB    VBD       verb, past tense
+my            PRON    PRP$      pronoun, possessive
+problem       NOUN    NN        noun, singular or mass
+quickly       ADV     RB        adverb
+.             PUNCT   .         punctuation mark, sentence closer
+Great         ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+job           NOUN    NN        noun, singular or mass
+!             PUNCT   .         punctuation mark, sentence closer
+
+Post 5: This update ruined the app and nobody fixed it.
+TOKEN         UPOS    PENN TAG  EXPLANATION
+This          DET     DT        determiner
+update        NOUN    NN        noun, singular or mass
+ruined        VERB    VBD       verb, past tense
+the           DET     DT        determiner
+app           NOUN    NN        noun, singular or mass
+and           CCONJ   CC        conjunction, coordinating
+nobody        PRON    NN        noun, singular or mass
+fixed         VERB    VBD       verb, past tense
+it            PRON    PRP       pronoun, personal
+.             PUNCT   .         punctuation mark, sentence closer
+
+Post 6: omg the concert last night was sooo good lol
+TOKEN         UPOS    PENN TAG  EXPLANATION
+omg           ADP     IN        conjunction, subordinating or preposition
+the           DET     DT        determiner
+concert       NOUN    NN        noun, singular or mass
+last          ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+night         NOUN    NN        noun, singular or mass
+was           AUX     VBD       verb, past tense
+sooo          ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+good          ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+lol           NOUN    NN        noun, singular or mass
+
+Post 7: Traffic on Mombasa Road is terrible today #nightmare
+TOKEN         UPOS    PENN TAG  EXPLANATION
+Traffic       NOUN    NN        noun, singular or mass
+on            ADP     IN        conjunction, subordinating or preposition
+Mombasa       PROPN   NNP       noun, proper singular
+Road          PROPN   NNP       noun, proper singular
+is            AUX     VBZ       verb, 3rd person singular present
+terrible      ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+today         NOUN    NN        noun, singular or mass
+#             SYM     $         symbol, currency
+nightmare     VERB    VBP       verb, non-3rd person singular present
+
+Post 8: @SafaricomPLC why is my internet so slow???
+TOKEN         UPOS    PENN TAG  EXPLANATION
+@SafaricomPLC PROPN   NNP       noun, proper singular
+why           SCONJ   WRB       wh-adverb
+is            AUX     VBZ       verb, 3rd person singular present
+my            PRON    PRP$      pronoun, possessive
+internet      NOUN    NN        noun, singular or mass
+so            ADV     RB        adverb
+slow          ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+?             PUNCT   .         punctuation mark, sentence closer
+?             PUNCT   .         punctuation mark, sentence closer
+?             PUNCT   .         punctuation mark, sentence closer
+
+Post 9: Loving the new battery life, best upgrade ever :)
+TOKEN         UPOS    PENN TAG  EXPLANATION
+Loving        VERB    VBG       verb, gerund or present participle
+the           DET     DT        determiner
+new           ADJ     JJ        adjective (English), other noun-modifier (Chinese)
+battery       NOUN    NN        noun, singular or mass
+life          NOUN    NN        noun, singular or mass
+,             PUNCT   ,         punctuation mark, comma
+best          ADV     RBS       adverb, superlative
+upgrade       VERB    VB        verb, base form
+ever          ADV     RB        adverb
+:)            PUNCT   .         punctuation mark, sentence closer
+
+Post 10: The delivery arrived late and the box was damaged.
+TOKEN         UPOS    PENN TAG  EXPLANATION
+The           DET     DT        determiner
+delivery      NOUN    NN        noun, singular or mass
+arrived       VERB    VBD       verb, past tense
+late          ADV     RB        adverb
+and           CCONJ   CC        conjunction, coordinating
+the           DET     DT        determiner
+box           NOUN    NN        noun, singular or mass
+was           AUX     VBD       verb, past tense
+damaged       VERB    VBN       verb, past participle
+.             PUNCT   .         punctuation mark, sentence closer
+
+POS distribution across all posts:
+upos
+NOUN     21
+PUNCT    12
+VERB     11
+ADJ      10
+DET       9
+ADV       8
+AUX       7
+PRON      6
+PROPN     4
+ADP       3
+CCONJ     3
+PART      1
+SYM       1
+SCONJ     1
+
+======================================================================
+PART 2: DEPENDENCY PARSING
+======================================================================
+
+Post 1: The new phone camera is absolutely amazing!
+TOKEN         DEP       HEAD          CHILDREN
+The           det       camera        []
+new           amod      camera        []
+phone         compound  camera        []
+camera        nsubj     is            ['The', 'new', 'phone']
+is            ROOT      is            ['camera', 'amazing', '!']
+absolutely    advmod    amazing       []
+amazing       acomp     is            ['absolutely']
+!             punct     is            []
+
+Post 2: Just landed in Nairobi and the weather is lovely.
+TOKEN         DEP       HEAD          CHILDREN
+Just          advmod    landed        []
+landed        ROOT      landed        ['Just', 'in', 'and', 'is']
+in            prep      landed        ['Nairobi']
+Nairobi       pobj      in            []
+and           cc        landed        []
+the           det       weather       []
+weather       nsubj     is            ['the']
+is            conj      landed        ['weather', 'lovely', '.']
+lovely        acomp     is            []
+.             punct     is            []
+
+Post 3: I can't believe the airline lost my luggage again.
+TOKEN         DEP       HEAD          CHILDREN
+I             nsubj     believe       []
+ca            aux       believe       []
+n't           neg       believe       []
+believe       ROOT      believe       ['I', 'ca', "n't", 'lost', '.']
+the           det       airline       []
+airline       nsubj     lost          ['the']
+lost          ccomp     believe       ['airline', 'luggage', 'again']
+my            poss      luggage       []
+luggage       dobj      lost          ['my']
+again         advmod    lost          []
+.             punct     believe       []
+
+Post 4: Customer service solved my problem quickly. Great job!
+TOKEN         DEP       HEAD          CHILDREN
+Customer      compound  service       []
+service       nsubj     solved        ['Customer']
+solved        ROOT      solved        ['service', 'problem', 'quickly', '.']
+my            poss      problem       []
+problem       dobj      solved        ['my']
+quickly       advmod    solved        []
+.             punct     solved        []
+Great         amod      job           []
+job           ROOT      job           ['Great', '!']
+!             punct     job           []
+
+Post 5: This update ruined the app and nobody fixed it.
+TOKEN         DEP       HEAD          CHILDREN
+This          det       update        []
+update        nsubj     ruined        ['This']
+ruined        ROOT      ruined        ['update', 'app', 'fixed']
+the           det       app           []
+app           dobj      ruined        ['the', 'and']
+and           cc        app           []
+nobody        nsubj     fixed         []
+fixed         conj      ruined        ['nobody', 'it', '.']
+it            dobj      fixed         []
+.             punct     fixed         []
+
+Post 6: omg the concert last night was sooo good lol
+TOKEN         DEP       HEAD          CHILDREN
+omg           prep      was           ['concert']
+the           det       concert       []
+concert       pobj      omg           ['the']
+last          amod      night         []
+night         npadvmod  was           ['last']
+was           ROOT      was           ['omg', 'night', 'lol']
+sooo          amod      lol           []
+good          amod      lol           []
+lol           attr      was           ['sooo', 'good']
+
+Post 7: Traffic on Mombasa Road is terrible today #nightmare
+TOKEN         DEP       HEAD          CHILDREN
+Traffic       nsubj     is            ['on']
+on            prep      Traffic       ['Road']
+Mombasa       compound  Road          []
+Road          pobj      on            ['Mombasa']
+is            ROOT      is            ['Traffic', 'terrible', 'today', '#', 'nightmare']
+terrible      acomp     is            []
+today         npadvmod  is            []
+#             dep       is            []
+nightmare     dep       is            []
+
+Post 8: @SafaricomPLC why is my internet so slow???
+TOKEN         DEP       HEAD          CHILDREN
+@SafaricomPLC npadvmod  is            []
+why           advmod    is            []
+is            ROOT      is            ['@SafaricomPLC', 'why', 'internet', 'slow', '?', '?', '?']
+my            poss      internet      []
+internet      nsubj     is            ['my']
+so            advmod    slow          []
+slow          acomp     is            ['so']
+?             punct     is            []
+?             punct     is            []
+?             punct     is            []
+
+Post 9: Loving the new battery life, best upgrade ever :)
+TOKEN         DEP       HEAD          CHILDREN
+Loving        advcl     upgrade       ['life']
+the           det       life          []
+new           amod      life          []
+battery       compound  life          []
+life          dobj      Loving        ['the', 'new', 'battery']
+,             punct     upgrade       []
+best          advmod    upgrade       []
+upgrade       ROOT      upgrade       ['Loving', ',', 'best', 'ever', ':)']
+ever          advmod    upgrade       []
+:)            punct     upgrade       []
+
+Post 10: The delivery arrived late and the box was damaged.
+TOKEN         DEP       HEAD          CHILDREN
+The           det       delivery      []
+delivery      nsubj     arrived       ['The']
+arrived       ROOT      arrived       ['delivery', 'late', 'and', 'damaged']
+late          advmod    arrived       []
+and           cc        arrived       []
+the           det       box           []
+box           nsubjpass damaged       ['the']
+was           auxpass   damaged       []
+damaged       conj      arrived       ['box', 'was', '.']
+.             punct     damaged       []
+
+Most common dependency relations:
+dep
+punct       12
+ROOT        11
+nsubj       10
+det          9
+advmod       9
+amod         6
+dobj         5
+compound     4
+acomp        4
+prep         3
+
+======================================================================
+SUBJECT-VERB-OBJECT TRIPLES
+======================================================================
+Post 1: ['camera'] -> be -> ['amazing']
+Post 2: ['weather'] -> be -> ['lovely']
+Post 3: ['I'] -> believe -> []
+Post 3: ['airline'] -> lose -> ['luggage']
+Post 4: ['service'] -> solve -> ['problem']
+Post 5: ['update'] -> ruin -> ['app']
+Post 5: ['nobody'] -> fix -> ['it']
+Post 6: [] -> be -> ['lol']
+Post 7: ['Traffic'] -> be -> ['terrible']
+Post 8: ['internet'] -> be -> ['slow']
+Post 10: ['delivery'] -> arrive -> []
+Post 10: ['box'] -> damage -> []
+
+Saved: topic2_pos_tags.csv, topic2_dependencies.csv, parse SVGs
+
+======================================================================
+NOISY TEXT CHECK (Post 6, 7, 8)
+======================================================================
+[('omg', 'ADP'), ('the', 'DET'), ('concert', 'NOUN'), ('last', 'ADJ'), ('night', 'NOUN'), ('was', 'AUX'), ('sooo', 'ADJ'), ('good', 'ADJ'), ('lol', 'NOUN')]
+[('Traffic', 'NOUN'), ('on', 'ADP'), ('Mombasa', 'PROPN'), ('Road', 'PROPN'), ('is', 'AUX'), ('terrible', 'ADJ'), ('today', 'NOUN'), ('#', 'SYM'), ('nightmare', 'VERB')]
+[('@SafaricomPLC', 'PROPN'), ('why', 'SCONJ'), ('is', 'AUX'), ('my', 'PRON'), ('internet', 'NOUN'), ('so', 'ADV'), ('slow', 'ADJ'), ('?', 'PUNCT'), ('?', 'PUNCT'), ('?', 'PUNCT')]
